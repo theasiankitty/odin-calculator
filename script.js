@@ -73,19 +73,15 @@ function getResult() {
 }
 
 function checkLength() {
-    if (inputDisplay.value.length <= 7) {
-        inputDisplay.style.fontSize = '4rem';
-    }
-
-    if (inputDisplay.value.length > 8) {
+    if (inputDisplay.value.length <= 8) {
         inputDisplay.style.fontSize = '3rem';
     }
 
-    if (inputDisplay.value.length > 12) {
+    if (inputDisplay.value.length > 9) {
         inputDisplay.style.fontSize = '2rem';
     }
 
-    if (inputDisplay.value.length > 19) {
+    if (inputDisplay.value.length > 14) {
         inputDisplay.value = 'NaN';
         checkLength();
     }
