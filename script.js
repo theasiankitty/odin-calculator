@@ -1,5 +1,3 @@
-const DEFAULT_ZERO = 0;
-
 const inputDisplay = document.querySelector('.display-input');
 inputDisplay.disabled = 'disabled';
 
