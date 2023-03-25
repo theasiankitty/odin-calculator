@@ -71,16 +71,31 @@ function getResult() {
 }
 
 function checkLength() {
-    if (inputDisplay.value.length <= 8) {
-        inputDisplay.style.fontSize = '3rem';
-    }
-
-    if (inputDisplay.value.length > 9) {
-        inputDisplay.style.fontSize = '2rem';
-    }
-
-    if (inputDisplay.value.length > 14) {
-        inputDisplay.value = 'NaN';
-        checkLength();
+    if (window.innerWidth < 500) {
+        if (inputDisplay.value.length <= 8) {
+            inputDisplay.style.fontSize = '3rem';
+        }
+    
+        if (inputDisplay.value.length > 9) {
+            inputDisplay.style.fontSize = '2rem';
+        }
+    
+        if (inputDisplay.value.length > 14) {
+            inputDisplay.value = 'NaN';
+            checkLength();
+        }
+    } else {
+        if (inputDisplay.value.length <= 8) {
+            inputDisplay.style.fontSize = '4rem';
+        }
+    
+        if (inputDisplay.value.length > 9) {
+            inputDisplay.style.fontSize = '2rem';
+        }
+    
+        if (inputDisplay.value.length > 14) {
+            inputDisplay.value = 'NaN';
+            checkLength();
+        }
     }
 }
