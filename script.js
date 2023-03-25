@@ -86,8 +86,3 @@ function checkLength() {
         checkLength();
     }
 }
-
-function showModal(message) {
-    alertModal.style.display = "flex";
-    modalText.textContent = message;
-}
